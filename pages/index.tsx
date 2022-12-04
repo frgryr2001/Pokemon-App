@@ -29,6 +29,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     },
   });
   const { data } = resp;
+
   const pokemons: SmallPokemon[] = data.results.map((pokemon, index) => {
     return {
       ...pokemon,
